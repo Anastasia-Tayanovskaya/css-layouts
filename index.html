@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Layouts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="src/css/custom.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Layouts</h1>
+	</header>
+	
+	<section class="slide">
+		<div>
+			<h2>Виды layout'a</h2>
+			<ul>
+				<li>Табличный</li>
+				<li>Блочный</li>
+				<li>Flexbox - Module 3</li>
+				<li>Grid Layout
+					<ul>
+						<li><a href="http://caniuse.com/#feat=css-grid">http://caniuse.com/#feat=css-grid</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></li>
+					</ul>
+				</li>
+				<li>Multi-column Layout
+					<ul>
+						<li><a href="http://www.w3schools.com/css/css3_multiple_columns.asp">CSS3 Multi-column Layout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Колоночные макеты</h2>
+			<ul class="column-layout-list">
+				<li><img style="height: 200px;" src="pictures/1.png"/></li>
+				<li><img style="height: 200px;" src="pictures/2.png"/></li>
+				<li><img style="height: 200px;" src="pictures/3.png"/></li>
+				<li><img style="height: 200px;" src="pictures/4.png"/></li>
+			</ul>
+			
+		</div>
+	</section>
+	
+	
+	<section class="slide">
+		<div>
+			<h2>DOM Tree and Render Tree</h2>
+			<pre>
+				<code style="font-size: 18px;">
+					&lt;html&gt;
+						&lt;head&gt;
+							&lt;meta charset="utf-8"&gt;
+							&lt;link rel="stylesheet" href="styles.css" &gt;
+						&lt;/head&gt;
+						&lt;body&gt;
+							&lt;p&gt;Hello, &lt;span&gt;web performance&lt;/span&gt; students&lt;/p&gt;
+							&lt;div&gt;&lt;img src="" alt=""/&gt;&lt;/div&gt;
+						&lt;/body&gt;
+					&lt;/html&gt;
+				</code>
+			</pre>
+			
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>DOM Tree and Render Tree</h2>
+			<pre>
+				<code style="font-size: 18px;">
+					body {font-size: 16px;}
+					p {font-weight: bold;}
+					p span {display: none;}
+					span {color: red; }
+					img {float: right;}
+					
+				</code>
+			</pre>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>DOM Tree and Render Tree</h2>
+			<img style="height: 450px;" src="pictures/render-tree-construction.png"/>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Repaint and Reflow (Layout Stage)</h2>
+			<img src="pictures/flow.png"/>
+			
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Repaint and Reflow (Layout Stage)</h2>
+			
+			<h4>Полезные ссылки:</h4>
+			<ul>
+				<li><a href="http://arvindr21.github.io/howBrowserWorks">How Browser Works</a></li>
+				<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=en">Render-tree construction, layout, and paint</a></li>
+				<li><a href="http://www.sitepoint.com/10-ways-minimize-reflows-improve-performance/">10 Ways to Minimize Reflows and Improve Performance</a></li>
+			</ul>
+
+			
+		</div>
+	</section>
+	
+	
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
